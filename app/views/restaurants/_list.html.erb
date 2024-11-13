@@ -1,0 +1,8 @@
+<% restaurants.each do |restaurant| %>
+<div class="list-item">
+  <h3><strong><%= link_to "#{restaurant.name}", restaurant_path(restaurant) %></strong></h3>
+  <p><strong>Address:</strong> <%= restaurant.address %></p>
+  <p><strong>Cuisine:</strong> <%= restaurant.category.capitalize %></p>
+  <p><strong>Phone no:</strong> <%= restaurant.phone_number %></p>
+</div>
+<% end %>
