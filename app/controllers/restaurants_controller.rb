@@ -8,11 +8,15 @@ class RestaurantsController < ApplicationController
   def show
   end
 
+  def new
+    @restaurant = Restaurant.new
+  end
+
   private
 
   def set_restaurant
     @restaurant = Restaurant.find(params[:id])
   end
-end
 
-# hello
+
+end
